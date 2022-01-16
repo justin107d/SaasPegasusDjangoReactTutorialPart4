@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Demo</title>
+</head>
+<body>
+    <h1>Employment Demo</h1>
+    <div id="js-framework-home" />
+    <!-- making the department_choices variable avialable in the DOM -->
+    {{ department_choices|json_script:'department-choices' }}
+    
+    <!--
+    <script id="department-choices" type="application/json">
+        [{"id": "hr", "name": "Human Resources"}, {"id": "finance", "name": "Finance"}] 
+    </script>
+    <script>
+        // output the 
+        var choices = JSON.parse(document.getElementById('department-choices').textContent)
+        console.log("From template script: ", choices)
+    </script> 
+    -->
+
+    <script src="{% static 'index-bundle.js' %}"></script>    
+
+</body>
+</html>
