@@ -5,3 +5,6 @@ A project created by following along with the talk given by Cory Zue of SaaS Peg
 
 ### [SaaS Pegasus Walkthrough](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/integrating-django-react/)
 
+
+Note that some links require you to be logged in.  A superuser can be created with the terminal command:
+`python manage.py createsuperuser`
